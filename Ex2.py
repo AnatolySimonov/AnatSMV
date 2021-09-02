@@ -18,14 +18,14 @@ while balance >= bid:
             print('Congratulations! You won!')
             balance = balance + 1000
             print('Your new balance is', balance,)
-            journal = ['Recent Lucky number:', sys_number, 'Your number', player_number, 'Attempts:', attempt, 'Balance:', balance]
+            journal = ['Recent Lucky number:', sys_number, 'Your number:', player_number, 'Attempts:', attempt, 'Balance:', balance]
             print('Another one?')
             print(journal[0:])
         else:
             print('You lost!')
             balance = balance - 1000
             print('Your new balance is', balance,)
-            journal = ['Recent Lucky number:', sys_number, 'Your number', player_number, 'Attempts:', attempt, 'Balance:', balance]
+            journal = ['Recent Lucky number:', sys_number, 'Your number:', player_number, 'Attempts:', attempt, 'Balance:', balance]
             print('Try again!')
             print(journal[0:])
 else:
