@@ -1,6 +1,4 @@
 import random
-speech_limit = random.randrange(5, 10)
-speech_quantity = random.randrange(5, 10)
 speech_1 = ['Коллеги ', 'В то же время ', 'Однако ', 'Тем не менее ', 'Следовательно ', 'Соответственно ',
             'Вместе с тем ', 'С другой стороны ']
 speech_2 = ['парадигма цифровой экономики ', 'контекст геймификации ', 'диджитализация бизнес-процессов ',
@@ -15,9 +13,35 @@ speech_4 = ['дальнейшего углубления ', 'бюджетног�
 speech_5 = ['знаний и компетенций ', 'непроверенных гипотез ', 'волатильных активов ', 'опасных экспериментов ',
             'государственно-частных партнеров ', 'цифровых следов граждан ', 'нежелательных последствий ',
             'случайных открытий ']
-while speech_quantity > speech_limit:
-    speech_limit = random.randrange(5, 10)
-    speech_quantity = random.randrange(5, 10)
+speech_length = 0
+speech_limit = random.randrange(5, 11)
+print("Сгенерировано фраз", speech_limit)
+while speech_length in range(speech_limit):
+    if speech_limit == 5:
+        print(random.choice(speech_1) + random.choice(speech_2) + random.choice(speech_3) + random.choice(speech_4) +
+              random.choice(speech_5))
+        break
+    if speech_limit == 6:
+        print(random.choice(speech_1) + random.choice(speech_2) + random.choice(speech_3) + random.choice(speech_4) +
+              random.choice(speech_5) + random.choice(speech_1))
+        break
+    if speech_limit == 7:
+        print(random.choice(speech_1) + random.choice(speech_2) + random.choice(speech_3) + random.choice(speech_4) +
+              random.choice(speech_5) + random.choice(speech_1) + random.choice(speech_2))
+        break
+    if speech_limit == 8:
+        print(random.choice(speech_1) + random.choice(speech_2) + random.choice(speech_3) + random.choice(speech_4) +
+              random.choice(speech_5) + random.choice(speech_1) + random.choice(speech_2) + random.choice(speech_3))
+        break
+    if speech_limit == 9:
+        print(random.choice(speech_1) + random.choice(speech_2) + random.choice(speech_3) + random.choice(speech_4) +
+              random.choice(speech_5) + random.choice(speech_1) + random.choice(speech_2) + random.choice(speech_3) +
+              random.choice(speech_4))
+        break
+    if speech_limit == 10:
+        print(random.choice(speech_1) + random.choice(speech_2) + random.choice(speech_3) + random.choice(speech_4) +
+              random.choice(speech_5) + random.choice(speech_1) + random.choice(speech_2) + random.choice(speech_3) +
+              random.choice(speech_4) + random.choice(speech_5))
+        break
 else:
-    speech = random.choice(speech_1) + random.choice(speech_2) + random.choice(speech_3) + random.choice(speech_4) + random.choice(speech_5)
-    print(speech[speech_quantity])
+    pass
