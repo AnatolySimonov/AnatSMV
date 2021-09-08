@@ -2,6 +2,9 @@ string1 = 'Съешь еще этих мягких французских бул
 print(string1.split()[2].upper())
 print(string1.split()[6].lower())
 print(string1.split()[7].lower()[2])
+for words in (string1.split()):
+    print(words)
 
-for words in string1:
-    print(words, end='')
+# Чтобы вывести одну строку:
+# for words in string1:
+# print(words, end='')
