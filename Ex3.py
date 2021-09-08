@@ -43,5 +43,3 @@ while speech_length in range(speech_limit):
               random.choice(speech_5) + random.choice(speech_1) + random.choice(speech_2) + random.choice(speech_3) +
               random.choice(speech_4) + random.choice(speech_5))
         break
-else:
-    pass
