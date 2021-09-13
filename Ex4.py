@@ -30,11 +30,13 @@ while i < 1:
     while random_rate < 0.85:
         random_rate = random.choice(list(ratings.values()))
         # print('Случайный рейтинг', random_rate)
+        continue
     else:
         rate_index = ratings_list_values.index(random_rate)
         while rate_index == science_fiction_index or rate_index == science_fiction_index1:
             rate_index = ratings_list_values.index(random_rate)
             # print('Индекс рейтинга', rate_index)
+            continue
         else:
             print("Как насчет сериала", ratings_list[rate_index], "?")
             if rate_index != science_fiction_index and rate_index != science_fiction_index1:
@@ -45,8 +47,3 @@ while i < 1:
                 elif answer == 'нет':
                     print("Попробуем сначала")
                     continue
-
-
-
-
-
