@@ -13,8 +13,6 @@ def selection_sort(input_list):
     return time.time() - start_time
 
 
-# Задание 3
-
 list1 = [1000, 2000, 5000, 10000]
 for element_in_list in range(len(list1)):
     list2 = []
