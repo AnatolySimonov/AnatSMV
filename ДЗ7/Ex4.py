@@ -34,6 +34,7 @@ for element_in_list in range(len(list1)):
     print(list2)
     print(f'Время сортировки (selection_sort): {selection_sort(list2)} сек.')
     print(f'Длина списка: {len(list2)} элементов.')
+    
 '''
 Время обработки увеличилось после добавления в цикл алгоритма bubble_sort
 '''
