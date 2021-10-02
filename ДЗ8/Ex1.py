@@ -20,23 +20,3 @@ for link in soup.find_all('a'):
 link_dict = {k: v for k in url_list for v in ftp_list}
 for key, value in link_dict.items():
     print("{0}: {1}".format(key, value))
-# Не получилось задать все параметры через функцию find_all
-
-
-
-
-
-
-
-
-
-'''
-ftp_list = []
-with open("result.txt", 'w') as file:
-    for link in soup.find_all('a'):
-        file.write(link.get('href')+'\n')
-f = open("result.txt", 'r')
-lines = f.readlines()
-for line in lines:
-    ftp_list.append(line)
-print(ftp_list)'''
