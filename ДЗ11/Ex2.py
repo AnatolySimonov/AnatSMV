@@ -25,24 +25,24 @@ class Student(Person):
                f' Оценки: {self.test_score}'
 
 
-Konstantin = Student(
+konstantin = Student(
     name='Константин',
     surname='Консерватор',
     group='ГР-01',
     test_score=random.randint(0, 10)
 )
 
-Ivan = Student(
+ivan = Student(
     name='Иван',
     surname='Иванов',
     group='ГР-02',
     test_score=random.randint(0, 10)
 )
 
-Konstantin.set_test_score(random.randint(0, 10))
-Ivan.set_test_score(random.randint(0, 10))
-print(Konstantin.__str__())
-print(Ivan.__str__())
+konstantin.set_test_score(random.randint(0, 10))
+ivan.set_test_score(random.randint(0, 10))
+print(konstantin.__str__())
+print(ivan.__str__())
 
 
 class Professor(Person):
@@ -59,9 +59,9 @@ class Professor(Person):
         return f'Преподаватель: {self.name} {self.surname} читает курс {self.subject}'
 
 
-Semen = Professor(
+semen = Professor(
     name='Семен',
     surname='Семенов',
     subject='ООП'
 )
-print(Semen.__str__())
+print(semen.__str__())
