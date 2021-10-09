@@ -7,12 +7,12 @@ class Person:
         return f'Имя: {self.name}, Фамилия: {self.surname}'
 
 
-Konstantin = Person(
+konstantin = Person(
     name='Константин',
     surname='Консерватор'
 )
 
-Ivan = Person(
+ivan = Person(
     name='Иван',
     surname='Иванов'
 )
