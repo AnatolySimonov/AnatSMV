@@ -17,5 +17,5 @@ ivan = Person(
     surname='Иванов'
 )
 
-print(Konstantin.__str__())
-print(Ivan.__str__())
+print(konstantin.__str__())
+print(ivan.__str__())
