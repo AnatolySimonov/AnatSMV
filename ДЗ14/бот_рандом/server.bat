@@ -1,4 +1,3 @@
 @echo_off
 
-python bot.py
-pause
+python main.py
